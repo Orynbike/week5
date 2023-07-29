@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+
+        .section {
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1; 
+            min-width: 200px; 
+            box-sizing: border-box; 
+        }
+
+        .sidebar {
+            flex: 0 0 200px;
+            background-color: #a5c9b0;
+            padding: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: gray;
+            color:black;
+            padding: 10px;
+
+        }
+
+        .footer {
+            padding: 10px;
+        }
+        .footer {
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Шапка страницы</h1>
+    </header>
+
+    <main class="main">
+            <h2>Основная часть</h2>
+    <div class="section">
+        <h3>Еще 1</h3>
+        <p>Это содержимое второго раздела.</p>
+    </div>
+    <div class="section">
+        <h3>Еще 2</h3>
+        <p>Это содержимое второго раздела.</p>
+    </div>
+    <div class="section">
+        <h3>Еще 3</h3>
+        <p>Это содержимое третьего раздела.</p>
+    </div>
+    <aside class="sidebar">
+        <h2>Боковая панель</h2>
+        <p>Боковая панель страницы</p>
+    </aside>
+    </main>
+    <div class="footer-container">
+        <footer class="footer">
+            <p>Футер 1</p>
+        </footer>
+        <footer class="footer">
+            <p>Футер 2</p>
+        </footer>
+        <footer class="footer">
+            <p>Футер 3</p>
+        </footer>
+        <footer class="footer">
+            <p>Футер 4</p>
+        </footer>
+    </div>
+</body>
+</html>
