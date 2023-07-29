@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        div,
+        p,
+        header,
+        .main,
+        .menu1,
+        .menu2,
+        .menu3,
+        .footer
+        {
+            border: 1px solid rgb(12, 12, 129);
+        }
+        header {
+            background-color: grey;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .menu {
+            flex: 1 0 30%;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 0 0 200px;
+            background-color: lightgrey;
+            padding: 20px;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Шапка страницы</h1>
+        </header>
+        <main class="main">
+            <div>Основная часть</div>
+            <div class="menu1">
+                <h2>Еще 1</h2>
+            </div>
+            <div class="menu2">
+                <h2>Еще 2</h2>
+            </div>
+            <div class="menu3">
+                <h2>Еще 3</h2>
+            </div>
+        <aside class="sidebar">
+            <h2>Боковая панель</h2>
+        </aside>
+        </main>
+        <div class="footer">
+            <p>Footer 1</p>
+            <p>Footer 2</p>
+            <p>Footer 3</p>
+            <p>Footer 4</p>
+        </div>
+    </div>
+</body>
+</html>
